@@ -3,5 +3,5 @@ app= Flask(__name__)
 app.secret_key ="sneaky"
 DATABASE = "gf_schema"
 import openai
-openai.api_key = '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'
+openai.api_key = 'APIKEY'
 
