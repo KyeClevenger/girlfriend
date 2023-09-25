@@ -2,7 +2,18 @@ from flask_app.config.mysqlconnection import connectToMySQL
 from flask_app import DATABASE
 import re
 from flask import flash
+import json
 from flask_app.models import user_model
+from elevenlabs import generate, play
+
+audio = generate(
+    text="Hello!",
+    voice="Bella",
+    model="eleven_multilingual_v2"
+)
+
+play(audio)
+
 
 class Robot:
     def __init__( self , data ) -> None:

@@ -59,27 +59,18 @@
                 <h2 class="txt mb-3">Ask Away!</h2>
             </div>
             <div class=" d-flex justify-content-center">
-                <!-- <form id="askForm">
-                    <input type="text" name="question" id="question" placeholder="Ask a question...">
-                    <input type="button" value="Ask" onclick="askQuestion()">
-                </form>
-                <textarea id="answer" rows="10" cols="50" readonly></textarea> -->
                 <div id="chatbox">
-                    <div id="chatlog"></div>
+                    <div class="text-center mt-5" id="chatlog"></div>
+                    <div class="marge fix" >
                     <input type="text" id="user_input" placeholder="Type your message...">
-                    <button id="send_button" onclick="sendMessage()">Send</button>
+                    <button class="cus" id="send_button" onclick="sendMessage(), scrollToTargetAdjusted(), talking()">Submit</button>
+                </div>
                 </div>
             </div>
+            </form>
+            <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+            <script src="{{url_for('static',filename ='css/script.js')}}"></script>
         </div>
-        <!-- <div class=" flex-column mt-3 form-group mt-5 shadow-lg p-3 mb-5 p-3 mb-2 bg-dark-subtle text-emphasis-dark">
-            <h2 class="txt">My Response!</h2>
-            <h2 class="text-center mb-3">You Asked: "{{ query }}"</h2>
-            <textarea rows="10" cols="148" id="answer" readonly>"{{ answer }}"</textarea>
-        </div> -->
-        </form>
-        <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
-        <script src="{{url_for('static',filename ='css/script.js')}}"></script>
-    </div>
 </body>
 
 </html>

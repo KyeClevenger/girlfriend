@@ -1,3 +1,13 @@
+@media (max-width: 480px) {
+    nav {
+        width: 480px;
+        height: 120px;
+        padding-top: 25px;
+        background-color: rgb(41, 190, 160);
+    }
+
+}
+
 /* Custom CSS */
 
 .container {
@@ -19,6 +29,12 @@ h6 {
     color: rgb(27, 169, 240);
 }
 
+h5{
+    color: rgb(139, 139, 139);
+}
+
+
+
 .txt {
     color: rgb(27, 169, 240);
     justify-content: center;
@@ -39,6 +55,29 @@ h6 {
     margin-left: 100px;
 }
 
+.cus{
+    background-color: palevioletred;
+    color: white;
+    border: 2px solid palevioletred;
+}
+
+.marge{
+    width: 200px;
+    height: 50px;
+}
+.fix{
+    height: 45px;
+    width: 360px;
+    margin: 0 auto ;
+}
+
+.anime{
+    border: 5px dashed deeppink; 
+    padding:3px; 
+    margin:5px;
+    height: 350px;
+    width: 350px;
+}
 
 /* Login Button change colors*/
 .button {
@@ -167,3 +206,5 @@ body.darkmode {
 .darkmode .btn__icon {
     color: var(--dark-icon-color);
 }
+
+
